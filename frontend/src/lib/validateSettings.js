@@ -1,18 +1,14 @@
-const LABELS = {
-  monthlyIncome: 'Monthly income',
-  monthlyExpenses: 'Fixed monthly expenses',
-  hoursPerDay: 'Working hours per day',
-  daysPerMonth: 'Working days per month',
-}
+import { FIELD_KEYS, FIELD_LABELS } from './fields'
 
 export function validateSettings(settings) {
   const errors = {}
-  for (const key of Object.keys(LABELS)) {
+  for (const key of FIELD_KEYS) {
     const value = settings[key]
-    if (value === '' || value === null || Number.isNaN(value)) {
-      errors[key] = `${LABELS[key]} must be a number`
+    const label = FIELD_LABELS[key]
+    if (value === '' || value === null || value === undefined || Number.isNaN(value)) {
+      errors[key] = `${label} must be a number`
     } else if (value < 0) {
-      errors[key] = `${LABELS[key]} can't be negative`
+      errors[key] = `${label} can't be negative`
     }
   }
   return errors

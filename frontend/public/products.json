@@ -1,7 +1,246 @@
-[
-  { "id": "coffee", "name": "Coffee", "price": 3 },
-  { "id": "smartphone", "name": "Smartphone", "price": 900 },
-  { "id": "laptop", "name": "Laptop", "price": 1500 },
-  { "id": "car", "name": "Car (used, average)", "price": 15000 },
-  { "id": "house-deposit", "name": "House deposit (average, EU)", "price": 40000 }
-]
+{
+  "currency_reference": {
+    "us": "USD (federal/state taxes excluded)",
+    "eu": "EUR (VAT included, Euro-area average)"
+  },
+  "products": [
+    {
+      "category": "Fresh groceries",
+      "model": "Whole fresh milk",
+      "configuration": "1 liter",
+      "price_us_usd": 1.15,
+      "price_eu_eur": 1.45
+    },
+    {
+      "category": "Fresh groceries",
+      "model": "Fresh eggs",
+      "configuration": "Pack of 12 (size M/L)",
+      "price_us_usd": 3.49,
+      "price_eu_eur": 2.99
+    },
+    {
+      "category": "Bakery",
+      "model": "White sliced bread",
+      "configuration": "500 g",
+      "price_us_usd": 2.20,
+      "price_eu_eur": 1.75
+    },
+    {
+      "category": "Pantry",
+      "model": "Ground coffee",
+      "configuration": "250 g, classic blend",
+      "price_us_usd": 4.50,
+      "price_eu_eur": 3.80
+    },
+    {
+      "category": "Condiments",
+      "model": "Extra virgin olive oil",
+      "configuration": "1-liter bottle",
+      "price_us_usd": 13.50,
+      "price_eu_eur": 8.90
+    },
+    {
+      "category": "Pantry",
+      "model": "Durum wheat semolina pasta",
+      "configuration": "500 g",
+      "price_us_usd": 1.85,
+      "price_eu_eur": 1.10
+    },
+    {
+      "category": "Personal care",
+      "model": "Fluoride toothpaste",
+      "configuration": "Standard tube, 75 ml / 100 g",
+      "price_us_usd": 2.99,
+      "price_eu_eur": 2.10
+    },
+    {
+      "category": "Personal care",
+      "model": "Hair shampoo",
+      "configuration": "250 ml bottle",
+      "price_us_usd": 4.50,
+      "price_eu_eur": 3.20
+    },
+    {
+      "category": "Household",
+      "model": "Liquid laundry detergent",
+      "configuration": "~1.5 L bottle (about 30 washes)",
+      "price_us_usd": 9.90,
+      "price_eu_eur": 6.50
+    },
+    {
+      "category": "Household",
+      "model": "Toilet paper",
+      "configuration": "Pack of 4 double-ply rolls",
+      "price_us_usd": 4.20,
+      "price_eu_eur": 2.60
+    },
+    {
+      "category": "Sedan",
+      "model": "Model 3",
+      "configuration": "Standard (RWD, rear-wheel drive, LFP battery)",
+      "price_us_usd": 36990,
+      "price_eu_eur": 36990
+    },
+    {
+      "category": "Sedan",
+      "model": "Model 3 Premium",
+      "configuration": "Premium RWD (formerly Long Range RWD)",
+      "price_us_usd": 42490,
+      "price_eu_eur": 45970
+    },
+    {
+      "category": "SUV",
+      "model": "Model Y",
+      "configuration": "Standard (RWD, rear-wheel drive)",
+      "price_us_usd": 39990,
+      "price_eu_eur": 39990
+    },
+    {
+      "category": "SUV",
+      "model": "Model Y Premium",
+      "configuration": "Premium RWD (Long Range RWD)",
+      "price_us_usd": 44990,
+      "price_eu_eur": 49990
+    },
+    {
+      "category": "Premium Sedan",
+      "model": "Model S",
+      "configuration": "Dual Motor All-Wheel Drive (AWD)",
+      "price_us_usd": 94990,
+      "price_eu_eur": 109990
+    },
+    {
+      "category": "Premium SUV",
+      "model": "Model X",
+      "configuration": "Dual Motor All-Wheel Drive (AWD)",
+      "price_us_usd": 99990,
+      "price_eu_eur": 114990
+    },
+    {
+      "category": "Smartphones",
+      "model": "iPhone 16",
+      "configuration": "128 GB",
+      "price_us_usd": 799,
+      "price_eu_eur": 949
+    },
+    {
+      "category": "Smartphones",
+      "model": "iPhone 16 Plus",
+      "configuration": "128 GB",
+      "price_us_usd": 899,
+      "price_eu_eur": 1099
+    },
+    {
+      "category": "Smartphones",
+      "model": "iPhone 16 Pro",
+      "configuration": "128 GB",
+      "price_us_usd": 999,
+      "price_eu_eur": 1199
+    },
+    {
+      "category": "Smartphones",
+      "model": "iPhone 16 Pro Max",
+      "configuration": "256 GB",
+      "price_us_usd": 1199,
+      "price_eu_eur": 1449
+    },
+    {
+      "category": "Smartphones",
+      "model": "iPhone 16e",
+      "configuration": "128 GB",
+      "price_us_usd": 599,
+      "price_eu_eur": 729
+    },
+    {
+      "category": "Laptops",
+      "model": "MacBook Air 13\"",
+      "configuration": "M3, 16 GB, 256 GB SSD",
+      "price_us_usd": 1099,
+      "price_eu_eur": 1299
+    },
+    {
+      "category": "Laptops",
+      "model": "MacBook Air 15\"",
+      "configuration": "M3, 16 GB, 256 GB SSD",
+      "price_us_usd": 1299,
+      "price_eu_eur": 1599
+    },
+    {
+      "category": "Laptops",
+      "model": "MacBook Pro 14\"",
+      "configuration": "M4, 16 GB, 512 GB SSD",
+      "price_us_usd": 1599,
+      "price_eu_eur": 1949
+    },
+    {
+      "category": "Laptops",
+      "model": "MacBook Pro 16\"",
+      "configuration": "M4 Pro, 24 GB, 512 GB SSD",
+      "price_us_usd": 2499,
+      "price_eu_eur": 2999
+    },
+    {
+      "category": "Desktops",
+      "model": "Mac mini",
+      "configuration": "M4, 16 GB, 256 GB SSD",
+      "price_us_usd": 599,
+      "price_eu_eur": 729
+    },
+    {
+      "category": "Tablets",
+      "model": "iPad",
+      "configuration": "10th Gen (A14), 64 GB Wi-Fi",
+      "price_us_usd": 349,
+      "price_eu_eur": 409
+    },
+    {
+      "category": "Tablets",
+      "model": "iPad Air 11\"",
+      "configuration": "M2, 128 GB Wi-Fi",
+      "price_us_usd": 599,
+      "price_eu_eur": 719
+    },
+    {
+      "category": "Tablets",
+      "model": "iPad Pro 11\"",
+      "configuration": "M4, 256 GB Wi-Fi",
+      "price_us_usd": 999,
+      "price_eu_eur": 1219
+    },
+    {
+      "category": "Wearables",
+      "model": "Apple Watch Series 10",
+      "configuration": "Aluminum 42mm GPS",
+      "price_us_usd": 399,
+      "price_eu_eur": 459
+    },
+    {
+      "category": "Wearables",
+      "model": "Apple Watch Ultra 2",
+      "configuration": "Titanium 49mm GPS + Cellular",
+      "price_us_usd": 799,
+      "price_eu_eur": 909
+    },
+    {
+      "category": "Audio",
+      "model": "AirPods 4",
+      "configuration": "Base (no ANC)",
+      "price_us_usd": 129,
+      "price_eu_eur": 149
+    },
+    {
+      "category": "Audio",
+      "model": "AirPods Pro 2",
+      "configuration": "USB-C case (MagSafe)",
+      "price_us_usd": 249,
+      "price_eu_eur": 279
+    },
+    {
+      "category": "Audio",
+      "model": "AirPods Max",
+      "configuration": "USB-C",
+      "price_us_usd": 549,
+      "price_eu_eur": 579
+    }
+  ]
+}

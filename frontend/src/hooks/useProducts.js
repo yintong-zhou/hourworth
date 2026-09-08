@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { normalizeCatalog } from '../lib/products'
 
 export function useProducts() {
   const [products, setProducts] = useState([])
@@ -13,7 +14,7 @@ export function useProducts() {
         return res.json()
       })
       .then((data) => {
-        if (!cancelled) setProducts(data)
+        if (!cancelled) setProducts(normalizeCatalog(data))
       })
       .catch((err) => {
         if (!cancelled) setError(err)
