@@ -1,0 +1,8 @@
+# Intermediate files, never committed (see CLAUDE.md)
+.tmp/*
+!.tmp/.gitkeep
+
+# Environment variables and credentials
+.env
+credentials.json
+token.json

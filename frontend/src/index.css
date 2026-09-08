@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "@fontsource/space-grotesk/400.css";
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/700.css";
+
+@theme {
+  --font-sans: "Space Grotesk", system-ui, sans-serif;
+
+  /* Brand palette — see brand-guidelines.md */
+  --color-accent: #cbf042;
+  --color-ink: #191a23;
+  --color-surface: #ffffff;
+  --color-panel: #f3f3f3;
+  --color-muted: #6c6c6c;
+  --color-line: #000000;
+
+  --radius-card: 20px;
+  --radius-pill: 999px;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}

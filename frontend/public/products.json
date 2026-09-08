@@ -1,0 +1,7 @@
+[
+  { "id": "coffee", "name": "Coffee", "price": 3 },
+  { "id": "smartphone", "name": "Smartphone", "price": 900 },
+  { "id": "laptop", "name": "Laptop", "price": 1500 },
+  { "id": "car", "name": "Car (used, average)", "price": 15000 },
+  { "id": "house-deposit", "name": "House deposit (average, EU)", "price": 40000 }
+]
